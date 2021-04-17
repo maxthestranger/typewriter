@@ -22,6 +22,85 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- start: login modal -->
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="registermodal"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable login-pop-form"
+        role="document"
+      >
+        <div class="modal-content" id="registermodal">
+          <div class="modal-header">
+            <h4>Sign In</h4>
+            <button
+              type="button"
+              class="close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="login-form">
+              <form>
+                <div class="form-group">
+                  <label class="active">User Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Username"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="active">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="*******"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn pop-login">Login</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="form-group text-center mb-sm">
+              <span>Or Signin with :</span>
+            </div>
+
+            <div class="social_logs mb-4">
+              <a href="#" class="share"><i class="fab fa-google"></i> Google</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="mf-link">
+              <i class="ti-user"></i>Haven't An Account?<a
+                href="javascript:void(0)"
+                class="theme-cl"
+              >
+                Sign Up</a
+              >
+            </div>
+            <div class="mf-forget">
+              <a href="#"><i class="ti-help"></i>Forget Password</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end: login modal -->
+
     <!-- start: navbar -->
     <header class="header-transparent">
       <div id="sticky-header" class="pl-55 pr-55 text-center">
@@ -41,9 +120,10 @@
                 <div class="main-menu d-none d-lg-block">
                   <nav id="mobile-menu" class="">
                     <ul>
-                      <li class=""><a href="#">Home</a></li>
+                      <li class=""><a href="#">How it Works</a></li>
                       <li class=""><a href="#">Blog</a></li>
-                      <li class=""><a href="#">Home</a></li>
+                      <li class=""><a href="#">About Us</a></li>
+                      <li class=""><a href="#">Contact Us</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -52,8 +132,8 @@
                     <a
                       class="h-btn h-btn-white d-lg-none d-xl-inline-block"
                       href="#"
-                      data-toggle="modal"
-                      data-target="#registerModal"
+                      data-bs-toggle="modal"
+                      data-bs-target="#login"
                       ><i class="far fa-user-circle"></i>&nbsp; Log In</a
                     >
                     <a class="h-btn h-btn-primary mx-3" href="#">
@@ -250,7 +330,7 @@
                     <span>#psychology</span>
                   </div>
                   <div class="candidate__btn">
-                    <a href="candidate-details.html" class="b-btn b-btn-green"
+                    <a href="order.html" class="b-btn b-btn-green"
                       >Get In touch<i class="far fa-arrow-right"></i
                     ></a>
                   </div>
@@ -282,7 +362,7 @@
                     <span>#psychology</span>
                   </div>
                   <div class="candidate__btn">
-                    <a href="candidate-details.html" class="b-btn b-btn-green"
+                    <a href="order.html" class="b-btn b-btn-green"
                       >Get In touch<i class="far fa-arrow-right"></i
                     ></a>
                   </div>
@@ -314,7 +394,7 @@
                     <span>#psychology</span>
                   </div>
                   <div class="candidate__btn">
-                    <a href="candidate-details.html" class="b-btn b-btn-green"
+                    <a href="order.html" class="b-btn b-btn-green"
                       >Get In touch<i class="far fa-arrow-right"></i
                     ></a>
                   </div>
@@ -349,7 +429,7 @@
                     <span>#psychology</span>
                   </div>
                   <div class="candidate__btn">
-                    <a href="candidate-details.html" class="b-btn b-btn-green"
+                    <a href="order.html" class="b-btn b-btn-green"
                       >Get In touch<i class="far fa-arrow-right"></i
                     ></a>
                   </div>
@@ -381,7 +461,7 @@
                     <span>#psychology</span>
                   </div>
                   <div class="candidate__btn">
-                    <a href="candidate-details.html" class="b-btn b-btn-green"
+                    <a href="order.html" class="b-btn b-btn-green"
                       >Get In touch<i class="far fa-arrow-right"></i
                     ></a>
                   </div>
@@ -413,7 +493,7 @@
                     <span>#psychology</span>
                   </div>
                   <div class="candidate__btn">
-                    <a href="candidate-details.html" class="b-btn b-btn-green"
+                    <a href="order.html" class="b-btn b-btn-green"
                       >Get In touch<i class="far fa-arrow-right"></i
                     ></a>
                   </div>

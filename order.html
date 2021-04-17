@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TypeWriter - Order</title>
+    <title>typewriter</title>
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
@@ -12,19 +12,107 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- start: navbar -->
-    <header></header>
+    <header class="header-transparent">
+      <div id="sticky-header" class="pl-55 pr-55 text-center">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+              <div class="logo">
+                <a href="#">
+                  <img src="images/logo.png" alt="typewriter" />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-10 col-md-6 col-sm-6 col-6">
+              <div
+                class="d-flex justify-content-end justify-content-lg-around align-items-center"
+              >
+                <div class="main-menu d-none d-lg-block">
+                  <nav id="mobile-menu" class="">
+                    <ul>
+                      <li class=""><a href="#">Home</a></li>
+                      <li class=""><a href="#">Blog</a></li>
+                      <li class=""><a href="#">Home</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="d-none d-lg-block">
+                  <div class="header-btn">
+                    <a
+                      class="h-btn h-btn-white d-lg-none d-xl-inline-block"
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#registerModal"
+                      ><i class="far fa-user-circle"></i>&nbsp; Log In</a
+                    >
+                    <a class="h-btn h-btn-primary mx-3" href="#">
+                      For Writers
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- end: navbar -->
 
-    <!-- start: order -->
-    <section></section>
-    <!-- end: order -->
+    <main>
+      <!-- start: hero -->
+      <section class="hero-area position-relative">
+        <div class="hero-slider">
+          <div class="single-slider slider-rest d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-xl-12 col-sm-12 col-xs-12">
+                  <div class="hero-content position-relative mt-80">
+                    <div class="hero-slider-caption text-center">
+                      <span class="hero-sub">25,630 Essays Written By Now</span>
+                      <h1>Access to experienced, verified writers.</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end: hero -->
+
+      <!-- start: order -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-3"></div>
+            <div class="col-sm-12 col-md-3"></div>
+            <div class="col-sm-12 col-md-3"></div>
+          </div>
+        </div>
+      </section>
+      <!-- end: order -->
+    </main>
 
     <!-- start: footer -->
-    <footer></footer>
+    <footer>
+      <div class="fr-bottom">
+        <p class="text-muted small">
+          Copyright 2021 © Made with 💖 In
+          <a href="#">Nairobi</a>, All Rights Reserved.
+        </p>
+      </div>
+    </footer>
     <!-- end: footer -->
 
     <!-- JavaScript Bundle with Popper -->
@@ -33,6 +121,7 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+
     <script src="js/main.js" defer></script>
   </body>
 </html>
